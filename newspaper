@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newspaper</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        article {
+            background-color: #e6f7ff;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        figure {
+            background-color: #fff3cd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        figcaption {
+            font-size: 14px;
+        }
+
+        aside {
+            background-color: #d1ecf1;
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+
+        footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Daily News</h1>
+</header>
+
+<section>
+    <article>
+        <h2>News Article</h2>
+        <figure>
+            <img src="https://via.placeholder.com/300" alt="News Image">
+            <figcaption>News Image Caption</figcaption>
+        </figure>
+        <p>This is a sample news article content.</p>
+    </article>
+</section>
+
+<aside>
+    <h3>Related News</h3>
+    <p>Short related news information.</p>
+</aside>
+
+<section>
+    <h2>Recent Posts</h2>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>Post 1</td>
+            <td>30-08-2024</td>
+        </tr>
+        <tr>
+            <td>Post 2</td>
+            <td>29-08-2024</td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <p>© 2024 Newspaper</p>
+</footer>
+
+</body>
+</html>
