@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Program</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 20px auto;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>jQuery Program 9</h2>
+
+<p id="para">This is a paragraph.</p>
+
+<ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+<div id="box"></div>
+
+<button id="appendBtn">Append Content</button>
+<button id="animateBtn">Animate Box</button>
+
+<script>
+    $(document).ready(function () {
+
+        // a) Append content
+        $("#appendBtn").click(function () {
+            $("#para").append(" Appended text");
+            $("#list").append("<li>New Item</li>");
+        });
+
+        // b) Animate element
+        $("#animateBtn").click(function () {
+            $("#box").animate({
+                width: "200px",
+                height: "200px"
+            }, 1000, function () {
+
+                // c) Change color after animation
+                $("#box").css("background-color", "green");
+            });
+        });
+
+    });
+</script>
+
+</body>
+</html>
